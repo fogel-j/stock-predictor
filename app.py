@@ -5,12 +5,12 @@ from prophet import Prophet
 from prophet.plot import plot_plotly
 from plotly import graph_objs as go
 
-START = "2015-01-01"
+START = "2023-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title("Stock Predictor")
 
-stocks = ("GOOG", "APPL", "MSFT", "GME")
+stocks = ("GOOG", "APPL", "MSFT", "GME", "TNA")
 selected_stock = st.selectbox("Select stock", stocks)
 
 n_years = st.slider("Years of prediction", 1,4)
